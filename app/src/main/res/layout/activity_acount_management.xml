@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarAccountManagement"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#AA000000"
+            android:theme="@style/AppTheme.ToolbarTheme"
+            app:subtitleTextColor="@android:color/holo_orange_light"
+            app:titleTextColor="@android:color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollViewAccountManagement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Rent Paid Upto : "
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvRoomRentPaidUpto"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="बैशाख"
+                        android:textColor="@android:color/holo_orange_light" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|start"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:padding="5dp"
+                        android:text="Room Details"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:padding="5dp"
+                            android:text="Room ID : "
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvRoomIdAccountManagement"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:layout_marginEnd="16dp"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:padding="5dp"
+                            android:text="Room Charge : "
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvRoomChargeAccountManagement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:padding="5dp"
+                            android:text="2500"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:padding="5dp"
+                            android:text="Electricity Initial Unit : "
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvElectricityInitialUnitAccountManagement"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:padding="5dp"
+                            android:text="2.5 "
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:text="Payment Details"
+                            android:textColor="@android:color/holo_orange_dark"
+                            android:textSize="20sp" />
+
+                        <Switch
+                            android:id="@+id/switchDayMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="90dp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeMonthBill"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/layoutMonthBill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvRoomChargeMonthPayment"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:padding="5dp"
+                                android:text="Collect room charge of month(s) : "
+                                android:textColor="@android:color/holo_green_dark"
+                                android:textSize="15sp" />
+
+                            <Button
+                                android:id="@+id/btnShowMonths"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/background_button"
+                                android:text="Show"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlMonthOperation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/layoutMonthBill"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:id="@+id/tvMonthList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|start"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="25dp"
+                                android:padding="5dp"
+                                android:text="No. of months : 1 (Baishak),"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tvMonthOperation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/tvMonthList"
+                                android:layout_gravity="center|start"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="35dp"
+                                android:padding="5dp"
+                                android:text="1 * 2500 = 2500"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeDayBill"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/layoutDayBill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvRoomChargeDayPayment"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:padding="5dp"
+                                android:text="Collect room charge of day(s) : "
+                                android:textColor="@android:color/holo_green_dark"
+                                android:textSize="15sp" />
+
+                            <Button
+                                android:id="@+id/btnShowDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/background_button"
+                                android:text="Show"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/white" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlDayOperation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/layoutDayBill"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tvDays"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|start"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="25dp"
+                                android:padding="5dp"
+                                android:text="16 day(s)"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tvDaysOperation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@id/tvDays"
+                                android:layout_gravity="center|start"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="35dp"
+                                android:padding="5dp"
+                                android:text="16 * (2500/3) = x"
+                                android:textColor="@android:color/holo_orange_light"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:padding="5dp"
+                            android:text="Final Electricity Unit(s) : "
+                            android:textColor="@android:color/holo_green_dark"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/etElectricityFinalUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:ems="5"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:textAllCaps="false" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlElectricityOperation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvElectricityUnit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="25dp"
+                            android:padding="5dp"
+                            android:text="10 unit(s)"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvElectricityOperation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/tvElectricityUnit"
+                            android:layout_gravity="center|start"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="35dp"
+                            android:padding="5dp"
+                            android:text="10 * 15 = x"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnGrandTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_button"
+                            android:text="Grand Total"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/tvGrandTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="4000"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Cash Received"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btnCashRevived"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button"
+                        android:text="Checked"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

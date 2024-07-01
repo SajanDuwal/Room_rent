@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyRoomRent</string>
+    <string name="string_personal_info">Personal Info</string>
+    <string name="empty_message">Please, click on <i> three dots </i>on the top right of the screen to <b> Insert new member </b> <i> OR </i> <b>Synchronize data from server</b></string>
+    <string name="string_hint_name">Name</string>
+    <string name="string_hint_address">Address</string>
+    <string name="string_hint_contact">Contact</string>
+    <string name="string_image_content_description">Member Image</string>
+    <string name="string_room_booking">Room Booking</string>
+    <string name="string_hint_roomId">RoomID</string>
+    <string name="string_hint_room_charge">Room Charge</string>
+    <string name="string_hint_electricity_initial_unit">Electricity current unit(s)</string>
+    <string name="string_bth_save">Save</string>
+    <string name="string_unpaid">Unpaid</string>
+    <string name="string_paid">Paid</string>
+    <string name="string_bottom_sheet_main_header">Member Name</string>
+    <string name="string_member_information">Member Information</string>
+    <string name="string_delete">Delete</string>
+    <string name="string_edit">Edit</string>
+    <string name="string_delete_member">Do you want to delete?</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="string_confirm_delete">Confirm Delete</string>
+    <string name="string_update_personal_info">Update Personal Info</string>
+    <string name="string_update_room_booking">Update Room Booking</string>
+    <string name="string_room_paid_up_to">Rent paid upto</string>
+    <string name="string_bth_update">Update</string>
+    <string name="string_hint_updated_name">Updated Name</string>
+    <string name="string_hint_updated_address">Updated Address</string>
+    <string name="string_hint_updated_contact">Updated Contact</string>
+    <string name="string_hint_updated_roomId">Updated RoomId</string>
+    <string name="string_hint_updated_room_charge">Updated Room Charge</string>
+    <string name="string_hint_updated_electricity_initial_unit">Updated Electricity Initial Unit</string>
+</resources>
